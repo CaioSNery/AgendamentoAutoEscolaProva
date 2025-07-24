@@ -21,7 +21,7 @@ namespace Agendamento.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddAlunos([FromBody] Alunos alunos)
+        public async Task<IActionResult> AddAlunos([FromBody] Aluno alunos)
         {
             var resultado = await _service.AddAlunoAsync(alunos);
             return Ok(new AlunoDTO
@@ -51,7 +51,7 @@ namespace Agendamento.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> AtualizarAluno(int id, [FromBody] Alunos alunosupdate)
+        public async Task<IActionResult> AtualizarAluno(int id, [FromBody] Aluno alunosupdate)
         {
             
             var resultado= await _service.AtualizarAlunoAsync(id,alunosupdate);

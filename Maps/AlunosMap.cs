@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Agendamento.Maps
 {
-    public class AlunosMap : IEntityTypeConfiguration<Alunos>
+    public class AlunosMap : IEntityTypeConfiguration<Aluno>
     {
-        public void Configure(EntityTypeBuilder<Alunos> builder)
+        public void Configure(EntityTypeBuilder<Aluno> builder)
         {
             builder.ToTable("Alunos");
 

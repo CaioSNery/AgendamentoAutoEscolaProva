@@ -20,14 +20,14 @@ namespace Agendamento.Services
         }
 
 
-        public async Task<object> AddAlunoAsync(Alunos alunos)
+        public async Task<object> AddAlunoAsync(Aluno aluno)
         {
-            _context.Alunos.Add(alunos);
+            _context.Alunos.Add(aluno);
             await _context.SaveChangesAsync();
-            return alunos;
+            return aluno;
         }
 
-        public async Task<object> AtualizarAlunoAsync(int id, Alunos alunoupdate)
+        public async Task<object> AtualizarAlunoAsync(int id, Aluno alunoupdate)
         {
             var aluno = await _context.Alunos.FindAsync(id);
             if (aluno == null) return false;
@@ -62,7 +62,7 @@ namespace Agendamento.Services
                 
         }
 
-        public async Task<IEnumerable<Alunos>> ListarAlunos()
+        public async Task<IEnumerable<Aluno>> ListarAlunos()
         {
             return await _context.Alunos.AsNoTracking().ToListAsync();
         }

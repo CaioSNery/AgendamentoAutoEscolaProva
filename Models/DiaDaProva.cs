@@ -13,6 +13,6 @@ namespace Agendamento.Models
         public int AlunoId { get; set; }
         public DateTime DataProva { get; set; }
         
-        public Alunos Alunos{ get; set; }
+        public Aluno Aluno{ get; set; }
     }
 }

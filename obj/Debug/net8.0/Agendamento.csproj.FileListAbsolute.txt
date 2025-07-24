@@ -144,3 +144,4 @@ C:\Projetos\Agendamento\Agendamento\obj\Debug\net8.0\refint\Agendamento.dll
 C:\Projetos\Agendamento\Agendamento\obj\Debug\net8.0\Agendamento.pdb
 C:\Projetos\Agendamento\Agendamento\obj\Debug\net8.0\Agendamento.genruntimeconfig.cache
 C:\Projetos\Agendamento\Agendamento\obj\Debug\net8.0\ref\Agendamento.dll
+C:\Projetos\Agendamento\Agendamento\obj\Debug\net8.0\Agendamento.sourcelink.json

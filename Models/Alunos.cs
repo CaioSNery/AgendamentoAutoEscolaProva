@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Agendamento.Models
 {
-    public class Alunos
+    public class Aluno
     {
         public int Id { get; set; }
         public required string Nome { get; set; }

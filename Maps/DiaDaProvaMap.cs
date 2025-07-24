@@ -16,7 +16,7 @@ namespace Agendamento.Maps
 
             builder.ToTable("AgendamentosDeProva");
 
-            builder.HasOne(a => a.Alunos)
+            builder.HasOne(a => a.Aluno)
             .WithMany(p => p.DiaDaProva)
             .HasForeignKey(a => a.AlunoId)
             .OnDelete(DeleteBehavior.Cascade);

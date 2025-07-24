@@ -9,14 +9,14 @@ namespace Agendamento.Interfaces
 {
     public interface IAlunoService
     {
-        Task<object> AddAlunoAsync(Alunos alunos);
+        Task<object> AddAlunoAsync(Aluno alunos);
 
         Task<bool> DeletarAlunoAsync(int id);
 
-        Task<IEnumerable<Alunos>> ListarAlunos();
+        Task<IEnumerable<Aluno>> ListarAlunos();
 
         Task<object> BuscarAlunoPorIdAsync(int id);
 
-        Task<object> AtualizarAlunoAsync(int id, Alunos alunoupdate);
+        Task<object> AtualizarAlunoAsync(int id, Aluno alunoupdate);
     }
 }

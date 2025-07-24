@@ -11,7 +11,7 @@ namespace Agendamento.Data
     {
         public AppDbContext(DbContextOptions options) : base(options) { }
 
-        public DbSet<Alunos> Alunos { get; set; }
+        public DbSet<Aluno> Alunos { get; set; }
         public DbSet<DiaDaProva> DiaDaProva { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
